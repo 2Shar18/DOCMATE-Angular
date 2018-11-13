@@ -1,0 +1,33 @@
+<table>
+    <tr class="top">
+        <td colspan="4">Personal Information</td>
+    </tr>
+    <tr class="welcome">
+        <td colspan="4"><h3>Welcome to Docmate</h3></td>
+    </tr>
+    <tr class="body">
+        <td colspan="4">Here we help you find the reason behind your  symptoms.</td>
+    </tr>
+    <tr class="body">
+        <td colspan="4">Lets get started by entering your information.</td>
+    </tr>
+    <tr class="body">
+        <td colspan="4">
+            <b>Gender:</b>
+            <input type="radio" ng-model="gender" value="male">Male
+            <input type="radio" ng-model="gender" value="female">Female
+        </td>
+    </tr>
+    <tr class="body">
+        <td colspan="4">
+            <b>Age:</b>
+            <select ng-model="selectedAge" ng-options="x for x in age"></select>
+        </td>
+    </tr>
+    <tr class="end">
+        <td colspan="4">
+            <a href="#!symptom" ng-click="next()"><span class="next">Next</span></a>
+        </td>
+    </tr>
+
+</table>

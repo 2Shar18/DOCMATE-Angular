@@ -1,0 +1,22 @@
+<table>
+    <tr>
+        <td>
+        </td>
+        <td colspan="2">
+            <table class="inner">
+                <tr class="head top">
+                    <td colspan="2">Predicted Diseases</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Your Possible Diseases:</td>
+                </tr>
+                <tr ng-repeat="x in diseases">
+                    <td><a href="#!detail/{{x.id}}">{{ x.name | uppercase }}</a></td>
+                    <td><span class="oval">{{ x.per }}%</span></td>
+                </tr>
+            </table>
+        </td>
+        <td>
+        </td>
+    </tr>
+</table>

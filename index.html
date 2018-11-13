@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+    <table>
+        <tr class="index top">
+            <td ng-repeat="x in menu"><span ng-class="{current: in >= $index}" class="dot">{{ $index + 1 }}</span></td>
+        </tr>
+        <tr class="head top">
+            <td ng-repeat="x in menu"><a ng-if="in >= $index" href="#!{{x}}">{{x | uppercase}}</a>
+            <a ng-if="in < $index">{{x | uppercase}}</a>
+            </td>
+        </tr>
+    </table>
+    <ng-view></ng-view>
+<script src="mainApp.js"></script>
+<script src="appCtrl.js"></script>
+</body>
+</html>

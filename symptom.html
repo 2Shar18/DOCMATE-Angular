@@ -1,0 +1,44 @@
+<form name="myForm">
+<table>
+    <tr class="main">
+        <td colspan="4">
+            <p>Gender: <b>{{ user.gender | uppercase}}</b> | Age: <b>{{ user.selectedAge | uppercase}}</b></p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <table class="innerTable">
+                <tr class="head top">
+                    <td>Choose Symptoms</td>
+                </tr>
+                <tr>
+                    <td>Select the symptoms from the drop-down list</td>
+                </tr>
+                <tr>
+                    <td><b>Symptoms:</b></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="symptom" ng-model="symptom" ng-options="x for x in symptoms" required="true"></select>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td colspan="2">
+            <table class="innerTable">
+                <tr class="head top">
+                    <td>Your Choices</td>
+                </tr>
+                <tr class="symptomEnd">
+                    <td>Your selected Symptoms : {{ symptom }}</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr class="end">
+        <td colspan="4">
+            <a href="#!disease" ng-click="next()" ng-hide="myForm.symptom.$pristine"><span class="next">Next</span></a>
+        </td>
+    </tr>
+</table>
+</form>

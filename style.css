@@ -1,0 +1,87 @@
+#sname {
+    font-size: 20px;
+}
+#shead {
+    font-size: 25px;
+}
+#ov {
+    font-size: 22px;
+    padding-top: 20px;
+}
+.dot {
+    height: 30px;
+    width: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    padding-top: 13px;
+    color: #4489ff;
+}
+.oval {
+    background: #008b8b;
+    padding: 1px 5px;
+    color: #fff;
+    border-radius: 40%;
+}
+.symptoms {
+    background: #f1f1f1;
+    padding: 1px 5px;
+    color: #000;
+    margin: 0px 5px;
+    border-radius: 10%;   
+}
+.current {
+    background-color: #51D651;
+    color: #fff;
+}
+table, th , td {
+    text-align: center;
+    /*border: 1px solid grey;*/
+    border-collapse: collapse;
+    padding: 5px;
+}
+table{
+    width: 100%;
+    table-layout: fixed;
+    border: 1px solid #4489ff;
+}
+table .top{
+    background-color: #4489ff;
+    color: #fff;
+}
+.index td{
+    padding-top: 20px;
+}
+.head td{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+.end td{
+    padding-bottom: 20px;
+}
+.next{
+    background: #4489ff;
+    padding: 0.5% 10%;
+    color: #fff;
+}
+.main{
+    background-color: #f1f1f1; 
+}
+.main td{
+    text-align: left;
+    padding: 0px;
+}
+.innerTable tr td{
+    text-align: left;
+}
+.symptomEnd td{
+    padding-bottom: 60px;
+}
+.inner{
+    width: 100%;
+}
+.top td a{
+    text-decoration: none;
+    color: #fff;
+}
